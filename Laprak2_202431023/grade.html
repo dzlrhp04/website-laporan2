@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Grade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Halaman Biodata</a>
+        <span class="separator">|</span>
+        <a href="grade.html">Halaman Grade</a>
+    </div>
+
+    <div class="card">
+        <h2>Hitung Nilai Akhir</h2>
+
+        <form>
+            <select id="pilihMatkul">
+                <option value="Pemrograman Web">Pemrograman Web</option>
+                <option value="Struktur Data">Struktur Data</option>
+                <option value="Pemrograman Berorientasi Objek">Pemrograman Berorientasi Objek</option>
+                <option value="Basis Data">Basis Data</option>
+                <option value="Teknik Digital">Teknik Digital</option>
+                <option value="Jaringan Komputer">Jaringan Komputer</option>
+                <option value="Komunikasi Data">Komunikasi Data</option>
+                <option value="MPPL">MPPL</option>
+                <option value="Pemrosesan Data Terdistribusi">Pemrosesan Data Terdistribusi</option>
+                <option value="Pengantar Big Data">Pengantar Big Data</option>
+                <option value="Sistem Operasi">Sistem Operasi</option>
+            </select>
+
+            <input type="number" id="tugas" placeholder="Nilai Tugas (20%)">
+            <input type="number" id="kuis" placeholder="Nilai Kuis (15%)">
+            <input type="number" id="uts" placeholder="Nilai UTS (25%)">
+            <input type="number" id="uas" placeholder="Nilai UAS (35%)">
+            <input type="number" id="absen" placeholder="Nilai Absensi (5%)">
+
+            <button type="button" onclick="hitungNilai()">Hitung</button>
+        </form>
+
+        <div class="result-box">
+            <h4>Hasil Penilaian</h4>
+            <p id="matakuliah">Mata Kuliah: -</p>
+            <p id="nilaiAkhir">Nilai Akhir: -</p>
+            <p id="gradeHuruf">Grade: -</p>
+        </div>
+    </div>
+
+    <footer>Dezalia Rahmanah Putri - 202431023 - Praktikum 2</footer>
+</body>
+</html>

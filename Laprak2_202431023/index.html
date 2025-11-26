@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Biodata</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Halaman Biodata</a>
+        <span class="separator">|</span>
+        <a href="grade.html">Halaman Grade</a>
+    </div>
+
+    <div class="profile-header">
+        <img src="logo_itpln.jpg" alt="profile">
+
+            <div class="profile-info">
+                <h2 id="namaDisplay">Dezalia Rahmanah Putri</h2>
+                <p id="nimDisplay">NIM: 202431023</p>
+                <p id="genderDisplay">Jenis Kelamin: Perempuan</p>
+                <p id="prodiDisplay">Program Studi: S1 Teknik Informatika</p>
+            </div>
+    </div>
+
+    <div class="card">
+        <h2>Lengkapi Identitas</h2><br>
+        <form>
+         <div class="form-row">
+            <div>
+                <p>Nama Lengkap</p>
+                <input type="text" id="inputNama" placeholder="Nama Lengkap">
+            </div>
+            <div>
+                <p>NIM</p>
+                <input type="text" id="inputNIM" placeholder="NIM">
+            </div>
+            <div>
+                <p>Jenis Kelamin</p>
+                <select id="inputGender">
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                </select>
+            </div>
+            <div>
+                <p>Program Studi</p>
+                <input type="text" id="inputProdi" placeholder="Program Studi">
+            </div>
+        </div>
+        <button type="button" onclick="updateBiodata()">Ubah Profil</button>
+         </form>
+    </div>
+
+    <div class="title">Informasi Singkat Tentang Saya</div>
+        <div class="card">
+        <h3>Hobi</h3><br>
+        <p>Suka membaca novel, nonton film.</p>
+        </div>
+
+        <div class="card">
+        <h3>Keahlian</h3><br>
+        <p>HTML, CSS, JS dasar.</p>
+        </div>
+
+        <div class="card">
+        <h3>Cita-cita</h3><br>
+        <p>Menjadi Software Engineer.</p>
+        </div>
+    
+        <button class="btn-nav" type="button"><a href="grade.html">Halaman Grade</a></button>
+
+    <footer>Dezalia Rahmanah Putri - 202431023 - Praktikum 2</footer>
+</body>
+</html>
